@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c8e9ffd3-b0dd-4377-82bc-9c1f44c2f4a4" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1314285493">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="fxml" value="1" />
+          <entry key="java" value="8" />
+          <entry key="xml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="8" />
+          <entry key="XML" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="2487" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2487" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-797449134">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-191750164">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="7" />
+          <entry key="xml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="7" />
+          <entry key="XML" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="28356">
+              <caret line="1786" selection-start-line="1786" selection-end-line="1786" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/NumberFormatException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Przelicznik_walutowy/Przelicznik_walutowy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/przelicznik_walutowy.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Przelicznik_walutowy/FXMLDocument.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Przelicznik_walutowy/FXMLDocumentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6120">
+              <caret line="415" column="64" selection-start-line="415" selection-start-column="64" selection-end-line="415" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>asdczxcaff</find>
+      <find>temp</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>selectionDate</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/przelicznik_walutowy/FXMLDocument.fxml" />
+        <option value="$PROJECT_DIR$/src/przelicznik_walutowy/FXMLDocumentController.java" />
+        <option value="$PROJECT_DIR$/przelicznik_walutowy.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="580" />
+    <option name="y" value="194" />
+    <option name="width" value="1229" />
+    <option name="height" value="1057" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>Class structureJava</id>
+          </State>
+          <State>
+            <id>Code style issuesJava</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>ECMAScript 6 migration aidsJavaScript</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>IconsUsabilityLintAndroid</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>LintAndroid</id>
+          </State>
+          <State>
+            <id>Naming conventionsJava</id>
+          </State>
+          <State>
+            <id>Node.jsJavaScript</id>
+          </State>
+          <State>
+            <id>OSGi</id>
+          </State>
+          <State>
+            <id>PerformanceJava</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>SecurityLintAndroid</id>
+          </State>
+          <State>
+            <id>Style issuesKotlin</id>
+          </State>
+          <State>
+            <id>TypeScript</id>
+          </State>
+          <State>
+            <id>UsabilityLintAndroid</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Przelicznik_walutowy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Przelicznik_walutowy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Przelicznik_walutowy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Przelicznik_walutowy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Przelicznik_walutowy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Przelicznik_walutowy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Przelicznik_walutowy" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="przelicznik_walutowy" />
+    <property name="SearchEverywhereHistoryKey" value="setting&#9;ACTION&#9;Database.Settings" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559414147692" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Przelicznik_walutowy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Przelicznik_walutowy" />
+      <module name="Przelicznik_walutowy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="przelicznik_walutowy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Przelicznik_walutowy" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c8e9ffd3-b0dd-4377-82bc-9c1f44c2f4a4" name="Default Changelist" comment="" />
+      <created>1559253869515</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559253869515</updated>
+      <workItem from="1559253870754" duration="7896000" />
+      <workItem from="1559262663955" duration="37000" />
+      <workItem from="1559289902661" duration="7821000" />
+      <workItem from="1559305264356" duration="1051000" />
+      <workItem from="1559394362576" duration="132000" />
+      <workItem from="1559394504942" duration="633000" />
+      <workItem from="1559398036160" duration="1107000" />
+      <workItem from="1559414067146" duration="132000" />
+      <workItem from="1559416864601" duration="662000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="19471000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1663113" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39806867" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3251073" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.49892703" visible="true" weight="0.2457356" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" x="0" y="0" width="434" height="866" id="Documentation" order="7" sideWeight="0.50107294" side_tool="true" visible="true" weight="0.2457356" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+    <buildFile url="file://$PROJECT_DIR$/build.xml">
+      <targetFilters>
+        <filter targetName="default" isVisible="true" />
+        <filter targetName="-pre-init" isVisible="false" />
+        <filter targetName="-init-private" isVisible="false" />
+        <filter targetName="-init-user" isVisible="false" />
+        <filter targetName="-init-project" isVisible="false" />
+        <filter targetName="-do-init" isVisible="false" />
+        <filter targetName="-post-init" isVisible="false" />
+        <filter targetName="-init-check" isVisible="false" />
+        <filter targetName="-init-macrodef-property" isVisible="false" />
+        <filter targetName="-init-macrodef-javac-with-processors" isVisible="false" />
+        <filter targetName="-init-macrodef-javac-without-processors" isVisible="false" />
+        <filter targetName="-init-macrodef-javac" isVisible="false" />
+        <filter targetName="-init-macrodef-junit-init" isVisible="false" />
+        <filter targetName="-init-test-properties" isVisible="false" />
+        <filter targetName="-init-macrodef-junit-single" isVisible="false" />
+        <filter targetName="-init-macrodef-junit-batch" isVisible="false" />
+        <filter targetName="-init-macrodef-junit" isVisible="false" />
+        <filter targetName="-init-macrodef-testng" isVisible="false" />
+        <filter targetName="-init-macrodef-test-impl" isVisible="false" />
+        <filter targetName="-init-macrodef-junit-impl" isVisible="false" />
+        <filter targetName="-init-macrodef-testng-impl" isVisible="false" />
+        <filter targetName="-init-macrodef-test" isVisible="false" />
+        <filter targetName="-init-macrodef-junit-debug" isVisible="false" />
+        <filter targetName="-init-macrodef-junit-debug-batch" isVisible="false" />
+        <filter targetName="-init-macrodef-junit-debug-impl" isVisible="false" />
+        <filter targetName="-init-macrodef-testng-debug" isVisible="false" />
+        <filter targetName="-init-macrodef-testng-debug-impl" isVisible="false" />
+        <filter targetName="-init-macrodef-test-debug-junit" isVisible="false" />
+        <filter targetName="-init-macrodef-test-debug-testng" isVisible="false" />
+        <filter targetName="-init-macrodef-test-debug" isVisible="false" />
+        <filter targetName="profile-init" isVisible="false" />
+        <filter targetName="-profile-pre-init" isVisible="false" />
+        <filter targetName="-profile-post-init" isVisible="false" />
+        <filter targetName="-profile-init-macrodef-profile" isVisible="false" />
+        <filter targetName="-profile-init-check" isVisible="false" />
+        <filter targetName="-init-macrodef-nbjpda" isVisible="false" />
+        <filter targetName="-init-debug-args" isVisible="false" />
+        <filter targetName="-init-macrodef-debug" isVisible="false" />
+        <filter targetName="-init-macrodef-java" isVisible="false" />
+        <filter targetName="-init-macrodef-copylibs" isVisible="false" />
+        <filter targetName="-init-presetdef-jar" isVisible="false" />
+        <filter targetName="-init-ap-cmdline-properties" isVisible="false" />
+        <filter targetName="-init-ap-cmdline-supported" isVisible="false" />
+        <filter targetName="-init-ap-cmdline" isVisible="false" />
+        <filter targetName="init" isVisible="false" />
+        <filter targetName="-deps-jar-init" isVisible="false" />
+        <filter targetName="-warn-already-built-jar" isVisible="false" />
+        <filter targetName="deps-jar" isVisible="false" />
+        <filter targetName="-verify-automatic-build" isVisible="false" />
+        <filter targetName="-check-automatic-build" isVisible="false" />
+        <filter targetName="-clean-after-automatic-build" isVisible="false" />
+        <filter targetName="-pre-pre-compile" isVisible="false" />
+        <filter targetName="-pre-compile" isVisible="false" />
+        <filter targetName="-compile-depend" isVisible="false" />
+        <filter targetName="-do-compile" isVisible="false" />
+        <filter targetName="-copy-persistence-xml" isVisible="false" />
+        <filter targetName="-post-compile" isVisible="false" />
+        <filter targetName="compile" isVisible="true" />
+        <filter targetName="-pre-compile-single" isVisible="false" />
+        <filter targetName="-do-compile-single" isVisible="false" />
+        <filter targetName="-post-compile-single" isVisible="false" />
+        <filter targetName="compile-single" isVisible="false" />
+        <filter targetName="-pre-pre-jar" isVisible="false" />
+        <filter targetName="-pre-jar" isVisible="false" />
+        <filter targetName="-do-jar-create-manifest" isVisible="false" />
+        <filter targetName="-do-jar-copy-manifest" isVisible="false" />
+        <filter targetName="-do-jar-set-mainclass" isVisible="false" />
+        <filter targetName="-do-jar-set-profile" isVisible="false" />
+        <filter targetName="-do-jar-set-splashscreen" isVisible="false" />
+        <filter targetName="-do-jar-copylibs" isVisible="false" />
+        <filter targetName="-do-jar-jar" isVisible="false" />
+        <filter targetName="-do-jar-delete-manifest" isVisible="false" />
+        <filter targetName="-do-jar-without-libraries" isVisible="false" />
+        <filter targetName="-do-jar-with-libraries" isVisible="false" />
+        <filter targetName="-post-jar" isVisible="false" />
+        <filter targetName="-do-jar" isVisible="false" />
+        <filter targetName="jar" isVisible="true" />
+        <filter targetName="run" isVisible="true" />
+        <filter targetName="-do-not-recompile" isVisible="false" />
+        <filter targetName="run-single" isVisible="false" />
+        <filter targetName="run-test-with-main" isVisible="false" />
+        <filter targetName="-debug-start-debugger" isVisible="false" />
+        <filter targetName="-debug-start-debugger-main-test" isVisible="false" />
+        <filter targetName="-debug-start-debuggee" isVisible="false" />
+        <filter targetName="debug" isVisible="true" />
+        <filter targetName="-debug-start-debugger-stepinto" isVisible="false" />
+        <filter targetName="debug-stepinto" isVisible="false" />
+        <filter targetName="-debug-start-debuggee-single" isVisible="false" />
+        <filter targetName="debug-single" isVisible="false" />
+        <filter targetName="-debug-start-debuggee-main-test" isVisible="false" />
+        <filter targetName="debug-test-with-main" isVisible="false" />
+        <filter targetName="-pre-debug-fix" isVisible="false" />
+        <filter targetName="-do-debug-fix" isVisible="false" />
+        <filter targetName="debug-fix" isVisible="false" />
+        <filter targetName="-profile-pre72" isVisible="true" />
+        <filter targetName="-profile-single-pre72" isVisible="true" />
+        <filter targetName="-profile-applet-pre72" isVisible="false" />
+        <filter targetName="-profile-test-single-pre72" isVisible="false" />
+        <filter targetName="-profile-check" isVisible="false" />
+        <filter targetName="profile" isVisible="true" />
+        <filter targetName="profile-single" isVisible="true" />
+        <filter targetName="profile-test-single" isVisible="true" />
+        <filter targetName="profile-test" isVisible="true" />
+        <filter targetName="profile-test-with-main" isVisible="true" />
+        <filter targetName="profile-applet" isVisible="false" />
+        <filter targetName="-javadoc-build" isVisible="false" />
+        <filter targetName="-javadoc-browse" isVisible="false" />
+        <filter targetName="javadoc" isVisible="true" />
+        <filter targetName="-pre-pre-compile-test" isVisible="false" />
+        <filter targetName="-pre-compile-test" isVisible="false" />
+        <filter targetName="-compile-test-depend" isVisible="false" />
+        <filter targetName="-do-compile-test" isVisible="false" />
+        <filter targetName="-post-compile-test" isVisible="false" />
+        <filter targetName="compile-test" isVisible="false" />
+        <filter targetName="-pre-compile-test-single" isVisible="false" />
+        <filter targetName="-do-compile-test-single" isVisible="false" />
+        <filter targetName="-post-compile-test-single" isVisible="false" />
+        <filter targetName="compile-test-single" isVisible="false" />
+        <filter targetName="-pre-test-run" isVisible="false" />
+        <filter targetName="-do-test-run" isVisible="false" />
+        <filter targetName="-post-test-run" isVisible="false" />
+        <filter targetName="test-report" isVisible="false" />
+        <filter targetName="-test-browse" isVisible="false" />
+        <filter targetName="test" isVisible="true" />
+        <filter targetName="-pre-test-run-single" isVisible="false" />
+        <filter targetName="-do-test-run-single" isVisible="false" />
+        <filter targetName="-post-test-run-single" isVisible="false" />
+        <filter targetName="test-single" isVisible="true" />
+        <filter targetName="-do-test-run-single-method" isVisible="false" />
+        <filter targetName="-post-test-run-single-method" isVisible="false" />
+        <filter targetName="test-single-method" isVisible="true" />
+        <filter targetName="-debug-start-debuggee-test" isVisible="false" />
+        <filter targetName="-debug-start-debuggee-test-method" isVisible="false" />
+        <filter targetName="-debug-start-debugger-test" isVisible="false" />
+        <filter targetName="debug-test" isVisible="false" />
+        <filter targetName="debug-test-method" isVisible="false" />
+        <filter targetName="-do-debug-fix-test" isVisible="false" />
+        <filter targetName="debug-fix-test" isVisible="false" />
+        <filter targetName="run-applet" isVisible="false" />
+        <filter targetName="-debug-start-debuggee-applet" isVisible="false" />
+        <filter targetName="debug-applet" isVisible="false" />
+        <filter targetName="-deps-clean-init" isVisible="false" />
+        <filter targetName="-warn-already-built-clean" isVisible="false" />
+        <filter targetName="deps-clean" isVisible="false" />
+        <filter targetName="-do-clean" isVisible="false" />
+        <filter targetName="-post-clean" isVisible="false" />
+        <filter targetName="clean" isVisible="true" />
+        <filter targetName="-check-call-dep" isVisible="false" />
+        <filter targetName="-maybe-call-dep" isVisible="false" />
+        <filter targetName="-pre-jfx-jar" isVisible="false" />
+        <filter targetName="-post-jfx-jar" isVisible="false" />
+        <filter targetName="-pre-jfx-deploy" isVisible="false" />
+        <filter targetName="-post-jfx-deploy" isVisible="false" />
+        <filter targetName="-pre-jfx-native" isVisible="false" />
+        <filter targetName="-post-jfx-native" isVisible="false" />
+        <filter targetName="-check-operating-system" isVisible="false" />
+        <filter targetName="-check-platform-home-fxsdk-java" isVisible="false" />
+        <filter targetName="-set-platform-home-fxsdk-java" isVisible="false" />
+        <filter targetName="-check-platform-home-java" isVisible="false" />
+        <filter targetName="-set-platform-home-java" isVisible="false" />
+        <filter targetName="-check-platform-home-probjdk-java" isVisible="false" />
+        <filter targetName="-set-platform-home-probjdk-java" isVisible="false" />
+        <filter targetName="-check-platform-home-envjdk-java" isVisible="false" />
+        <filter targetName="-set-platform-home-envjdk-java" isVisible="false" />
+        <filter targetName="-check-platform-home-fxrt-java" isVisible="false" />
+        <filter targetName="-set-platform-home-fxrt-java" isVisible="false" />
+        <filter targetName="-check-platform-home-jre-java" isVisible="false" />
+        <filter targetName="-set-platform-home-jre-java" isVisible="false" />
+        <filter targetName="-check-platform-home" isVisible="false" />
+        <filter targetName="-check-jdk-version" isVisible="false" />
+        <filter targetName="-check-ant-jre-version" isVisible="false" />
+        <filter targetName="-check-jdk-7u4or5-mac" isVisible="false" />
+        <filter targetName="-check-endorsed-javafx-ant-classpath" isVisible="false" />
+        <filter targetName="-check-property-javafx.sdk" isVisible="false" />
+        <filter targetName="-check-ant-javafx-in-fxsdk-lib" isVisible="false" />
+        <filter targetName="-set-ant-javafx-in-fxsdk-lib" isVisible="false" />
+        <filter targetName="-check-ant-javafx-in-fxsdk-tools" isVisible="false" />
+        <filter targetName="-set-ant-javafx-in-fxsdk-tools" isVisible="false" />
+        <filter targetName="-check-ant-javafx-in-platform-home-lib" isVisible="false" />
+        <filter targetName="-set-ant-javafx-in-platform-home-lib" isVisible="false" />
+        <filter targetName="-check-ant-javafx-in-platform-home-tools" isVisible="false" />
+        <filter targetName="-set-ant-javafx-in-platform-home-tools" isVisible="false" />
+        <filter targetName="-check-ant-javafx-in-probjdk-lib" isVisible="false" />
+        <filter targetName="-set-ant-javafx-in-probjdk-lib" isVisible="false" />
+        <filter targetName="-check-ant-javafx-in-probjdk-tools" isVisible="false" />
+        <filter targetName="-set-ant-javafx-in-probjdk-tools" isVisible="false" />
+        <filter targetName="-check-ant-javafx-in-macjdk-lib" isVisible="false" />
+        <filter targetName="-set-ant-javafx-in-macjdk-lib" isVisible="false" />
+        <filter targetName="-check-ant-javafx-in-envjdk-lib" isVisible="false" />
+        <filter targetName="-set-ant-javafx-in-envjdk-lib" isVisible="false" />
+        <filter targetName="-check-ant-javafx-in-envjdk-tools" isVisible="false" />
+        <filter targetName="-set-ant-javafx-in-envjdk-tools" isVisible="false" />
+        <filter targetName="-pre-check-ant-javafx-version" isVisible="false" />
+        <filter targetName="-set-endorsed-javafx-ant-classpath" isVisible="false" />
+        <filter targetName="-set-javafx-ant-classpath" isVisible="false" />
+        <filter targetName="-check-ant-javafx-version" isVisible="false" />
+        <filter targetName="-check-jfx-sdk-version-old" isVisible="false" />
+        <filter targetName="-check-jfx-sdk-version-new" isVisible="false" />
+        <filter targetName="-check-jfx-sdk-version" isVisible="false" />
+        <filter targetName="-check-jfx-deployment" isVisible="false" />
+        <filter targetName="-check-property-javafx.runtime" isVisible="false" />
+        <filter targetName="-check-jfxrt-in-fxrt" isVisible="false" />
+        <filter targetName="-set-jfxrt-in-fxrt-old" isVisible="false" />
+        <filter targetName="-set-jfxrt-in-fxrt-new" isVisible="false" />
+        <filter targetName="-check-jfxrt-in-fxsdk-jre" isVisible="false" />
+        <filter targetName="-set-jfxrt-in-fxsdk-jre-old" isVisible="false" />
+        <filter targetName="-set-jfxrt-in-fxsdk-jre-new" isVisible="false" />
+        <filter targetName="-check-jfxrt-in-fxsdk-rt" isVisible="false" />
+        <filter targetName="-set-jfxrt-in-fxsdk-rt-old" isVisible="false" />
+        <filter targetName="-set-jfxrt-in-fxsdk-rt-new" isVisible="false" />
+        <filter targetName="-check-jfxrt-in-platform-home-jre" isVisible="false" />
+        <filter targetName="-set-jfxrt-in-platform-home-jre-old" isVisible="false" />
+        <filter targetName="-set-jfxrt-in-platform-home-jre-new" isVisible="false" />
+        <filter targetName="-check-jfxrt-in-platform-home-rt" isVisible="false" />
+        <filter targetName="-set-jfxrt-in-platform-home-rt-old" isVisible="false" />
+        <filter targetName="-set-jfxrt-in-platform-home-rt-new" isVisible="false" />
+        <filter targetName="-check-jfxrt-in-jre" isVisible="false" />
+        <filter targetName="-set-jfxrt-in-jre-old" isVisible="false" />
+        <filter targetName="-set-jfxrt-in-jre-new" isVisible="false" />
+        <filter targetName="-check-jfxrt-in-envjdk-jre" isVisible="false" />
+        <filter targetName="-set-jfxrt-in-envjdk-jre-old" isVisible="false" />
+        <filter targetName="-set-jfxrt-in-envjdk-jre-new" isVisible="false" />
+        <filter targetName="-pre-check-jfx-runtime" isVisible="false" />
+        <filter targetName="-check-jfx-runtime" isVisible="false" />
+        <filter targetName="-check-webstart-in-fxrt" isVisible="false" />
+        <filter targetName="-set-webstart-in-fxrt" isVisible="false" />
+        <filter targetName="-check-webstart-in-fxsdk-jre" isVisible="false" />
+        <filter targetName="-set-webstart-in-fxsdk-jre" isVisible="false" />
+        <filter targetName="-check-webstart-in-fxsdk" isVisible="false" />
+        <filter targetName="-set-webstart-in-fxsdk" isVisible="false" />
+        <filter targetName="-check-webstart-in-platform-home-jre" isVisible="false" />
+        <filter targetName="-set-webstart-in-platform-home-jre" isVisible="false" />
+        <filter targetName="-check-webstart-in-platform-home" isVisible="false" />
+        <filter targetName="-set-webstart-in-platform-home" isVisible="false" />
+        <filter targetName="-check-webstart-in-jre" isVisible="false" />
+        <filter targetName="-set-webstart-in-jre" isVisible="false" />
+        <filter targetName="-check-webstart-in-probjdk" isVisible="false" />
+        <filter targetName="-set-webstart-in-probjdk" isVisible="false" />
+        <filter targetName="-check-webstart-in-envjdk" isVisible="false" />
+        <filter targetName="-set-webstart-in-envjdk" isVisible="false" />
+        <filter targetName="-pre-check-webstart-in-unix" isVisible="false" />
+        <filter targetName="-check-webstart-in-unix" isVisible="false" />
+        <filter targetName="-set-webstart-in-unix" isVisible="false" />
+        <filter targetName="-pre-check-jfx-webstart" isVisible="false" />
+        <filter targetName="-check-jfx-webstart" isVisible="false" />
+        <filter targetName="-check-javafx" isVisible="false" />
+        <filter targetName="-javafx-check-error" isVisible="false" />
+        <filter targetName="-init-javafx" isVisible="false" />
+        <filter targetName="-check-default-run-config" isVisible="false" />
+        <filter targetName="-check-project" isVisible="false" />
+        <filter targetName="-swing-api-check" isVisible="false" />
+        <filter targetName="-swing-api-warning" isVisible="false" />
+        <filter targetName="-icon-deployment-check" isVisible="false" />
+        <filter targetName="-icon-warning" isVisible="false" />
+        <filter targetName="-set-dimensions" isVisible="false" />
+        <filter targetName="-reset-dimensions" isVisible="false" />
+        <filter targetName="-set-update-mode-background" isVisible="false" />
+        <filter targetName="-set-update-mode-eager" isVisible="false" />
+        <filter targetName="-set-permissions-elevated" isVisible="false" />
+        <filter targetName="-reset-permissions-elevated" isVisible="false" />
+        <filter targetName="-set-binary-css" isVisible="false" />
+        <filter targetName="-unset-binary-css" isVisible="false" />
+        <filter targetName="-copy-binary-css" isVisible="false" />
+        <filter targetName="-init-css-conversion" isVisible="false" />
+        <filter targetName="-copy-binary-css-bypass" isVisible="false" />
+        <filter targetName="-copy-binary-css-impl" isVisible="false" />
+        <filter targetName="-jfx-copylibs" isVisible="false" />
+        <filter targetName="-jfx-copylibs-warning" isVisible="false" />
+        <filter targetName="-copy-external-preloader-jar" isVisible="false" />
+        <filter targetName="-rebase-libs" isVisible="false" />
+        <filter targetName="-check-rebase-libs" isVisible="false" />
+        <filter targetName="-rebase-libs-warning" isVisible="false" />
+        <filter targetName="-new-temp-mainfest-existence" isVisible="false" />
+        <filter targetName="-move-new-manifest-if-exists" isVisible="false" />
+        <filter targetName="-rebase-libs-macro-call" isVisible="false" />
+        <filter targetName="jfx-deployment" isVisible="false" />
+        <filter targetName="-check-dist-lib-exists" isVisible="false" />
+        <filter targetName="-check-jfx-deployment-jar-current-nolib" isVisible="false" />
+        <filter targetName="-check-jfx-deployment-jar-current-lib" isVisible="false" />
+        <filter targetName="-check-jfx-deployment-launch" isVisible="false" />
+        <filter targetName="-do-jfx-deployment-script" isVisible="false" />
+        <filter targetName="-do-jfx-deployment-noscript" isVisible="false" />
+        <filter targetName="jfx-deployment-script" isVisible="false" />
+        <filter targetName="jfx-deployment-noscript" isVisible="false" />
+        <filter targetName="-unavailable-signjars-task" isVisible="false" />
+        <filter targetName="-security-props-check" isVisible="false" />
+        <filter targetName="-check-signing-possible" isVisible="false" />
+        <filter targetName="-javafx-init-keystore" isVisible="false" />
+        <filter targetName="-check-keystore-exists" isVisible="false" />
+        <filter targetName="-javafx-init-signing" isVisible="false" />
+        <filter targetName="-javafx-init-keystore1" isVisible="false" />
+        <filter targetName="-javafx-init-keystore2" isVisible="false" />
+        <filter targetName="-check-signing-security" isVisible="false" />
+        <filter targetName="-warn-insufficient-signing" isVisible="false" />
+        <filter targetName="-check-sign" isVisible="false" />
+        <filter targetName="-check-nosign" isVisible="false" />
+        <filter targetName="-deploy-app-sign-nopreloader-notemplate" isVisible="false" />
+        <filter targetName="-deploy-app-sign-blob-nopreloader-notemplate" isVisible="false" />
+        <filter targetName="-deploy-app-sign-preloader-notemplate" isVisible="false" />
+        <filter targetName="-deploy-app-sign-blob-preloader-notemplate" isVisible="false" />
+        <filter targetName="-deploy-app-sign-nopreloader-template" isVisible="false" />
+        <filter targetName="-deploy-app-sign-blob-nopreloader-template" isVisible="false" />
+        <filter targetName="-deploy-app-sign-preloader-template" isVisible="false" />
+        <filter targetName="-deploy-app-sign-blob-preloader-template" isVisible="false" />
+        <filter targetName="-deploy-app-sign-nopreloader-notemplate-swing" isVisible="false" />
+        <filter targetName="-deploy-app-sign-blob-nopreloader-notemplate-swing" isVisible="false" />
+        <filter targetName="-deploy-app-sign-nopreloader-template-swing" isVisible="false" />
+        <filter targetName="-deploy-app-sign-blob-nopreloader-template-swing" isVisible="false" />
+        <filter targetName="-deploy-app-nosign-nopreloader-notemplate" isVisible="false" />
+        <filter targetName="-deploy-app-nosign-preloader-notemplate" isVisible="false" />
+        <filter targetName="-deploy-app-nosign-nopreloader-template" isVisible="false" />
+        <filter targetName="-deploy-app-nosign-preloader-template" isVisible="false" />
+        <filter targetName="-deploy-app-nosign-nopreloader-notemplate-swing" isVisible="false" />
+        <filter targetName="-deploy-app-nosign-nopreloader-template-swing" isVisible="false" />
+        <filter targetName="-check-fallback-sign-deploy-swing-possible" isVisible="false" />
+        <filter targetName="-fallback-deploy-app-sign-nopreloader-notemplate" isVisible="false" />
+        <filter targetName="-fallback-deploy-app-sign-blob-nopreloader-notemplate" isVisible="false" />
+        <filter targetName="-fallback-deploy-app-sign-preloader-notemplate" isVisible="false" />
+        <filter targetName="-fallback-deploy-app-sign-blob-preloader-notemplate" isVisible="false" />
+        <filter targetName="-fallback-deploy-app-sign-nopreloader-template" isVisible="false" />
+        <filter targetName="-fallback-deploy-app-sign-blob-nopreloader-template" isVisible="false" />
+        <filter targetName="-fallback-deploy-app-sign-preloader-template" isVisible="false" />
+        <filter targetName="-fallback-deploy-app-sign-blob-preloader-template" isVisible="false" />
+        <filter targetName="-fallback-deploy-app-sign-nopreloader-notemplate-swing" isVisible="false" />
+        <filter targetName="-fallback-deploy-app-sign-blob-nopreloader-notemplate-swing" isVisible="false" />
+        <filter targetName="-fallback-deploy-app-sign-nopreloader-template-swing" isVisible="false" />
+        <filter targetName="-fallback-deploy-app-sign-blob-nopreloader-template-swing" isVisible="false" />
+        <filter targetName="-check-fallback-nosign-deploy-swing-possible" isVisible="false" />
+        <filter targetName="-fallback-deploy-app-nosign-nopreloader-notemplate" isVisible="false" />
+        <filter targetName="-fallback-deploy-app-nosign-preloader-notemplate" isVisible="false" />
+        <filter targetName="-fallback-deploy-app-nosign-nopreloader-template" isVisible="false" />
+        <filter targetName="-fallback-deploy-app-nosign-preloader-template" isVisible="false" />
+        <filter targetName="-fallback-deploy-app-nosign-nopreloader-notemplate-swing" isVisible="false" />
+        <filter targetName="-fallback-deploy-app-nosign-nopreloader-template-swing" isVisible="false" />
+        <filter targetName="jfx-build" isVisible="false" />
+        <filter targetName="jfx-build-noscript" isVisible="false" />
+        <filter targetName="jfx-rebuild" isVisible="false" />
+        <filter targetName="jfx-rebuild-noscript" isVisible="false" />
+        <filter targetName="jfx-build-native" isVisible="false" />
+        <filter targetName="jfx-build-native-noscript" isVisible="false" />
+        <filter targetName="build-native" isVisible="false" />
+        <filter targetName="build-native-noscript" isVisible="false" />
+        <filter targetName="-check-do-jar" isVisible="false" />
+        <filter targetName="-set-fallback-no-javascript" isVisible="false" />
+        <filter targetName="-jfx-do-compile" isVisible="false" />
+        <filter targetName="-jfx-do-jar" isVisible="false" />
+        <filter targetName="-jfx-do-post-jar" isVisible="false" />
+        <filter targetName="-set-do-build-native-package" isVisible="false" />
+        <filter targetName="-check-ant-jre-supports-native-packaging" isVisible="false" />
+        <filter targetName="-call-pre-jfx-native" isVisible="false" />
+        <filter targetName="-call-post-jfx-native" isVisible="false" />
+        <filter targetName="-check-native-bundling-type" isVisible="false" />
+        <filter targetName="-check-Inno-presence" isVisible="false" />
+        <filter targetName="-check-WiX-presence" isVisible="false" />
+        <filter targetName="-check-dpkg-presence" isVisible="false" />
+        <filter targetName="-check-rpmbuild-presence" isVisible="false" />
+        <filter targetName="-check-native-packager-external-tools" isVisible="false" />
+        <filter targetName="-warn-of-preloader" isVisible="false" />
+        <filter targetName="-mark-project-state-running" isVisible="false" />
+        <filter targetName="-mark-project-state-debugging" isVisible="false" />
+        <filter targetName="-mark-project-state-debugging-in-browser" isVisible="false" />
+        <filter targetName="-mark-project-state-profiling" isVisible="false" />
+        <filter targetName="-mark-project-needs-jnlp" isVisible="false" />
+        <filter targetName="-check-concurrent-runs" isVisible="false" />
+        <filter targetName="-create-temp-run-dir" isVisible="false" />
+        <filter targetName="-remove-temp-run-dir" isVisible="false" />
+        <filter targetName="jfx-project-run" isVisible="true" />
+        <filter targetName="jfx-project-debug" isVisible="true" />
+        <filter targetName="jfxsa-run" isVisible="false" />
+        <filter targetName="jfxsa-run-noscript" isVisible="false" />
+        <filter targetName="jfxsa-debug" isVisible="false" />
+        <filter targetName="jfxsa-debug-noscript" isVisible="false" />
+        <filter targetName="jfxsa-profile" isVisible="false" />
+        <filter targetName="jfxsa-profile-noscript" isVisible="false" />
+        <filter targetName="-check-clean-if-config-changed" isVisible="false" />
+        <filter targetName="-clean-if-config-changed" isVisible="false" />
+        <filter targetName="jfx-project-profile" isVisible="true" />
+        <filter targetName="-check-jnlp-file-fx" isVisible="false" />
+        <filter targetName="-check-jnlp-file-swing" isVisible="false" />
+        <filter targetName="-check-jnlp-file" isVisible="false" />
+        <filter targetName="-resolve-jnlp-file" isVisible="false" />
+        <filter targetName="-check-concurrent-jnlp-runs" isVisible="false" />
+        <filter targetName="-warn-concurrent-jnlp-runs" isVisible="false" />
+        <filter targetName="jfxws-run" isVisible="true" />
+        <filter targetName="jfxws-debug" isVisible="true" />
+        <filter targetName="-debug-javaws-debuggee" isVisible="false" />
+        <filter targetName="-profile-check-1" isVisible="false" />
+        <filter targetName="-profile-check-jnlp" isVisible="false" />
+        <filter targetName="-do-jfxws-profile" isVisible="false" />
+        <filter targetName="jfxws-profile" isVisible="true" />
+        <filter targetName="jfxws-run-noscript" isVisible="false" />
+        <filter targetName="jfxws-debug-noscript" isVisible="false" />
+        <filter targetName="jfxws-profile-noscript" isVisible="false" />
+        <filter targetName="-check-selected-browser-path" isVisible="false" />
+        <filter targetName="-substitute-template-processed-html-file" isVisible="false" />
+        <filter targetName="-check-template-processed-html-file" isVisible="false" />
+        <filter targetName="-set-template-processed-html-file" isVisible="false" />
+        <filter targetName="-set-html-file" isVisible="false" />
+        <filter targetName="-check-concurrent-html-runs" isVisible="false" />
+        <filter targetName="-warn-concurrent-html-runs" isVisible="false" />
+        <filter targetName="jfxbe-run" isVisible="true" />
+        <filter targetName="jfxbe-debug" isVisible="true" />
+        <filter targetName="-debug-jfxbe-debuggee" isVisible="false" />
+        <filter targetName="-profile-check-html" isVisible="false" />
+        <filter targetName="-do-jfxbe-profile" isVisible="false" />
+        <filter targetName="jfxbe-profile" isVisible="true" />
+        <filter targetName="jfxbe-run-noscript" isVisible="false" />
+        <filter targetName="jfxbe-debug-noscript" isVisible="false" />
+        <filter targetName="jfxbe-profile-noscript" isVisible="false" />
+      </targetFilters>
+      <expanded value="true" />
+    </buildFile>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.controls/javafx/scene/control/DatePicker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="235" column="44" selection-start-line="235" selection-start-column="44" selection-end-line="235" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../matchingfiles/src/matchingfiles/Matchingfiles.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.base/com/sun/javafx/event/BasicEventDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.base/com/sun/javafx/event/EventDispatchChainImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28356">
+          <caret line="1786" selection-start-line="1786" selection-end-line="1786" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/NumberFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/przelicznik_walutowy.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Przelicznik_walutowy/FXMLDocument.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Przelicznik_walutowy/FXMLDocumentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6120">
+          <caret line="415" column="64" selection-start-line="415" selection-start-column="64" selection-end-line="415" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Przelicznik_walutowy/Przelicznik_walutowy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
