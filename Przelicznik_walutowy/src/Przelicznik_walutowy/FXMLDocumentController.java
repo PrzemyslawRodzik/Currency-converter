@@ -5,7 +5,7 @@
  */
 package przelicznik_walutowy;
 
-aaaaa
+
 import java.io.File;
 import java.net.URL;
 
@@ -50,7 +50,7 @@ import javafx.scene.control.DatePicker;
 
 
 import org.xml.sax.SAXException;
-asdasdadsasdasdadasdasd
+
 /**
  *
  * @author Pszemek
