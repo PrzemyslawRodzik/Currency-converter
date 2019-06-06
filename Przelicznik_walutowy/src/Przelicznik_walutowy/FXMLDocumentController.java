@@ -57,12 +57,17 @@ import org.xml.sax.SAXException;
  */
 public class FXMLDocumentController extends Przelicznik_walutowy implements Initializable {
     
-    @FXML
-    private Label przelicz_label;
+   //button
     @FXML
     private Button licz;
     @FXML
+    private Button btnd;
+    
+    @FXML
     private TextField pole1;
+     @FXML
+    private TextField polewynik;
+     
     @FXML
     private ComboBox<String> lista_z;
     @FXML
@@ -71,31 +76,37 @@ public class FXMLDocumentController extends Przelicznik_walutowy implements Init
     
    
     private File kursy;
-     private String data_kursow;
+    private String data_kursow;
     private List<Double> rates;
     private List<String> kod_waluty;
     private Document doc;
     private int day;
-  
     private String urls,baza;
     private Date data;
+    private boolean nacisniety;
+    
     @FXML
     private DatePicker cal;
     private String stringBaza;
-    @FXML
-    private TextField polewynik;
+   
+    //Label
     @FXML
     private Label kod_z;
      @FXML
     private Label info;
     @FXML
     private Label kod_na;
+    @FXML
+    private Label kursy_show;
+     @FXML
+    private Label przelicz_label;
     
+     
     @FXML
     private AreaChart<?,?> wykres;
-    @FXML
-    private Button btnd;
-    private boolean nacisniety;
+    
+    
+    
    
 
     
@@ -106,12 +117,12 @@ public class FXMLDocumentController extends Przelicznik_walutowy implements Init
     private void init_datapicker(){
         
         
-cal.setDayCellFactory(e -> new DateCell() {
+cal.setDayCellFactory(e -> new DateCell() { 
         @Override
         public void updateItem(LocalDate date, boolean empty) {
             super.updateItem(date, empty);
             LocalDate today = LocalDate.now();
-            LocalDate year= LocalDate.of(2019, 1, 1);
+            LocalDate year= LocalDate.of(2019, 1, 1); 
             setDisable(empty || date.compareTo(today) > 0 || date.isBefore(year) );
            // setDisable(empty || date.isBefore(year));
             
@@ -196,8 +207,9 @@ return f;
         kod_na.setText("ZL");
         
         
+        
         init_datapicker();
-        komunikat("Wczytano kursy walut z 29 maja 2019r");
+        komunikat("Domyslnie wczytano kursy walut z 29 maja 2019r");
         dodawanie_wykresu(rates,kod_waluty);
         
     
@@ -372,6 +384,7 @@ return f;
         dodawanie_wykresu(rates,kod_waluty);
          zapis.close();
          nacisniety=false;
+         kursy_show.setText("Kursy z dnia "+data_kursow);
       } 
       
         
@@ -426,6 +439,7 @@ return y/rate2;
             
                 polewynik.setText(String.valueOf(wynik));
                 info.setText("1 "+kod_waluty.get(temp1)+" = "+wynik/liczba+" "+kod_waluty.get(temp2)+", wedlug sredniego kursu NBP z dn. "+data_kursow);
+                
             
         
         } 
