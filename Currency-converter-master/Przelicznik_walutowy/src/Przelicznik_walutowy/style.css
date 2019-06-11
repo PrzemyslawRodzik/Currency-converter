@@ -1,0 +1,26 @@
+.combo-box .cell{
+    -fx-text-fill: white;
+    -fx-font: 16px "Segoe UI Semibold";
+	
+	
+}
+.combo-box-popup .list-view .list-cell {
+    -fx-padding: -1 -1 -1 -1;
+	-fx-background-color: #273952;
+}
+.date-picker:editable > .arrow-button > * {
+    -fx-opacity: 0; /* Set the node in the button to be visible */
+}
+
+.date-picker > .arrow-button {
+     /* Url of the icon */
+    -fx-background-size: 60% 60%; /* Can be `cover` or `100% 100%` ect. */
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center; /* Put the icon in the center */
+}
+.AreaChart
+{
+
+    .default-color0.chart-series-area-fill { -fx-fill:#263D58; }
+.default-color1.chart-series-area-fill { -fx-fill: #d8bfd855; }
+}

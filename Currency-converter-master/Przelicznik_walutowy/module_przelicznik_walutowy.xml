@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_przelicznik_walutowy" default="compile.module.przelicznik_walutowy">
+  <dirname property="module.przelicznik_walutowy.basedir" file="${ant.file.module_przelicznik_walutowy}"/>
+  
+  <property name="module.jdk.home.przelicznik_walutowy" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.przelicznik_walutowy" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.przelicznik_walutowy" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.przelicznik_walutowy" value="-encoding UTF-8 -source 10 -target 10 ${compiler.args}"/>
+  
+  <property name="przelicznik_walutowy.output.dir" value="${module.przelicznik_walutowy.basedir}/out/production/Przelicznik_walutowy"/>
+  <property name="przelicznik_walutowy.testoutput.dir" value="${module.przelicznik_walutowy.basedir}/out/test/Przelicznik_walutowy"/>
+  
+  <path id="przelicznik_walutowy.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="przelicznik_walutowy.module.production.classpath">
+    <path refid="${module.jdk.classpath.przelicznik_walutowy}"/>
+  </path>
+  
+  <path id="przelicznik_walutowy.runtime.production.module.classpath">
+    <pathelement location="${przelicznik_walutowy.output.dir}"/>
+  </path>
+  
+  <path id="przelicznik_walutowy.module.classpath">
+    <path refid="${module.jdk.classpath.przelicznik_walutowy}"/>
+    <pathelement location="${przelicznik_walutowy.output.dir}"/>
+  </path>
+  
+  <path id="przelicznik_walutowy.runtime.module.classpath">
+    <pathelement location="${przelicznik_walutowy.testoutput.dir}"/>
+    <pathelement location="${przelicznik_walutowy.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.przelicznik_walutowy">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.przelicznik_walutowy">
+    <patternset refid="excluded.from.module.przelicznik_walutowy"/>
+  </patternset>
+  
+  <path id="przelicznik_walutowy.module.sourcepath">
+    <dirset dir="${module.przelicznik_walutowy.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.przelicznik_walutowy" depends="compile.module.przelicznik_walutowy.production,compile.module.przelicznik_walutowy.tests" description="Compile module Przelicznik_walutowy"/>
+  
+  <target name="compile.module.przelicznik_walutowy.production" depends="register.custom.compilers" description="Compile module Przelicznik_walutowy; production classes">
+    <mkdir dir="${przelicznik_walutowy.output.dir}"/>
+    <javac2 destdir="${przelicznik_walutowy.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.przelicznik_walutowy}/javac">
+      <compilerarg line="${compiler.args.przelicznik_walutowy}"/>
+      <bootclasspath refid="przelicznik_walutowy.module.bootclasspath"/>
+      <classpath refid="przelicznik_walutowy.module.production.classpath"/>
+      <src refid="przelicznik_walutowy.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.przelicznik_walutowy"/>
+    </javac2>
+    
+    <copy todir="${przelicznik_walutowy.output.dir}">
+      <fileset dir="${module.przelicznik_walutowy.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.przelicznik_walutowy.tests" depends="register.custom.compilers,compile.module.przelicznik_walutowy.production" description="compile module Przelicznik_walutowy; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.przelicznik_walutowy" description="cleanup module">
+    <delete dir="${przelicznik_walutowy.output.dir}"/>
+    <delete dir="${przelicznik_walutowy.testoutput.dir}"/>
+  </target>
+</project>
