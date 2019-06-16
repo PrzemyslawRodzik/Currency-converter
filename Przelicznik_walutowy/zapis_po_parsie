@@ -4,208 +4,208 @@ Current Element :pozycja
 Nazwa waluty : bat (Tajlandia)
 przelicznik : 1
 kod_waluty : THB
-kurs_sredni : 0,1210
+kurs_sredni : 0,1211
 
 Current Element :pozycja
 Nazwa waluty : dolar amerykański
 przelicznik : 1
 kod_waluty : USD
-kurs_sredni : 3,7929
+kurs_sredni : 3,8554
 
 Current Element :pozycja
 Nazwa waluty : dolar australijski
 przelicznik : 1
 kod_waluty : AUD
-kurs_sredni : 2,6551
+kurs_sredni : 2,6665
 
 Current Element :pozycja
 Nazwa waluty : dolar Hongkongu
 przelicznik : 1
 kod_waluty : HKD
-kurs_sredni : 0,4837
+kurs_sredni : 0,4912
 
 Current Element :pozycja
 Nazwa waluty : dolar kanadyjski
 przelicznik : 1
 kod_waluty : CAD
-kurs_sredni : 2,8362
+kurs_sredni : 2,8543
 
 Current Element :pozycja
 Nazwa waluty : dolar nowozelandzki
 przelicznik : 1
 kod_waluty : NZD
-kurs_sredni : 2,5195
+kurs_sredni : 2,5132
 
 Current Element :pozycja
 Nazwa waluty : dolar singapurski
 przelicznik : 1
 kod_waluty : SGD
-kurs_sredni : 2,7809
+kurs_sredni : 2,7876
 
 Current Element :pozycja
 Nazwa waluty : euro
 przelicznik : 1
 kod_waluty : EUR
-kurs_sredni : 4,2782
+kurs_sredni : 4,3007
 
 Current Element :pozycja
 Nazwa waluty : forint (Węgry)
 przelicznik : 100
 kod_waluty : HUF
-kurs_sredni : 1,3299
+kurs_sredni : 1,3141
 
 Current Element :pozycja
 Nazwa waluty : frank szwajcarski
 przelicznik : 1
 kod_waluty : CHF
-kurs_sredni : 3,8234
+kurs_sredni : 3,8329
 
 Current Element :pozycja
 Nazwa waluty : funt szterling
 przelicznik : 1
 kod_waluty : GBP
-kurs_sredni : 4,8221
+kurs_sredni : 4,8744
 
 Current Element :pozycja
 Nazwa waluty : hrywna (Ukraina)
 przelicznik : 1
 kod_waluty : UAH
-kurs_sredni : 0,1411
+kurs_sredni : 0,1445
 
 Current Element :pozycja
 Nazwa waluty : jen (Japonia)
 przelicznik : 100
 kod_waluty : JPY
-kurs_sredni : 3,5038
+kurs_sredni : 3,5289
 
 Current Element :pozycja
 Nazwa waluty : korona czeska
 przelicznik : 1
 kod_waluty : CZK
-kurs_sredni : 0,1666
+kurs_sredni : 0,1663
 
 Current Element :pozycja
 Nazwa waluty : korona duńska
 przelicznik : 1
 kod_waluty : DKK
-kurs_sredni : 0,5729
+kurs_sredni : 0,5758
 
 Current Element :pozycja
 Nazwa waluty : korona islandzka
 przelicznik : 100
 kod_waluty : ISK
-kurs_sredni : 3,0668
+kurs_sredni : 3,1007
 
 Current Element :pozycja
 Nazwa waluty : korona norweska
 przelicznik : 1
 kod_waluty : NOK
-kurs_sredni : 0,4371
+kurs_sredni : 0,4407
 
 Current Element :pozycja
 Nazwa waluty : korona szwedzka
 przelicznik : 1
 kod_waluty : SEK
-kurs_sredni : 0,4027
+kurs_sredni : 0,4011
 
 Current Element :pozycja
 Nazwa waluty : kuna (Chorwacja)
 przelicznik : 1
 kod_waluty : HRK
-kurs_sredni : 0,5767
+kurs_sredni : 0,5792
 
 Current Element :pozycja
 Nazwa waluty : lej rumuński
 przelicznik : 1
 kod_waluty : RON
-kurs_sredni : 0,9040
+kurs_sredni : 0,9030
 
 Current Element :pozycja
 Nazwa waluty : lew (Bułgaria)
 przelicznik : 1
 kod_waluty : BGN
-kurs_sredni : 2,1874
+kurs_sredni : 2,1989
 
 Current Element :pozycja
 Nazwa waluty : lira turecka
 przelicznik : 1
 kod_waluty : TRY
-kurs_sredni : 0,6632
+kurs_sredni : 0,6397
 
 Current Element :pozycja
 Nazwa waluty : nowy izraelski szekel
 przelicznik : 1
 kod_waluty : ILS
-kurs_sredni : 1,0506
+kurs_sredni : 1,0665
 
 Current Element :pozycja
 Nazwa waluty : peso chilijskie
 przelicznik : 100
 kod_waluty : CLP
-kurs_sredni : 0,5471
+kurs_sredni : 0,5449
 
 Current Element :pozycja
 Nazwa waluty : peso filipińskie
 przelicznik : 1
 kod_waluty : PHP
-kurs_sredni : 0,0733
+kurs_sredni : 0,0736
 
 Current Element :pozycja
 Nazwa waluty : peso meksykańskie
 przelicznik : 1
 kod_waluty : MXN
-kurs_sredni : 0,1940
+kurs_sredni : 0,2002
 
 Current Element :pozycja
 Nazwa waluty : rand (Republika Południowej Afryki)
 przelicznik : 1
 kod_waluty : ZAR
-kurs_sredni : 0,2578
+kurs_sredni : 0,2595
 
 Current Element :pozycja
 Nazwa waluty : real (Brazylia)
 przelicznik : 1
 kod_waluty : BRL
-kurs_sredni : 0,9833
+kurs_sredni : 0,9579
 
 Current Element :pozycja
 Nazwa waluty : ringgit (Malezja)
 przelicznik : 1
 kod_waluty : MYR
-kurs_sredni : 0,9086
+kurs_sredni : 0,9187
 
 Current Element :pozycja
 Nazwa waluty : rubel rosyjski
 przelicznik : 1
 kod_waluty : RUB
-kurs_sredni : 0,0583
+kurs_sredni : 0,0593
 
 Current Element :pozycja
 Nazwa waluty : rupia indonezyjska
 przelicznik : 10000
 kod_waluty : IDR
-kurs_sredni : 2,6571
+kurs_sredni : 2,6774
 
 Current Element :pozycja
 Nazwa waluty : rupia indyjska
 przelicznik : 100
 kod_waluty : INR
-kurs_sredni : 5,4736
+kurs_sredni : 5,5151
 
 Current Element :pozycja
 Nazwa waluty : won południowokoreański
 przelicznik : 100
 kod_waluty : KRW
-kurs_sredni : 0,3219
+kurs_sredni : 0,3226
 
 Current Element :pozycja
 Nazwa waluty : yuan renminbi (Chiny)
 przelicznik : 1
 kod_waluty : CNY
-kurs_sredni : 0,5490
+kurs_sredni : 0,5578
 
 Current Element :pozycja
 Nazwa waluty : SDR (MFW)
 przelicznik : 1
 kod_waluty : XDR
-kurs_sredni : 5,2662
+kurs_sredni : 5,3021

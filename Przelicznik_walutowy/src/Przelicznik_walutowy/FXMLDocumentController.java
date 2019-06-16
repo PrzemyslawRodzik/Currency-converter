@@ -6,6 +6,8 @@
 package przelicznik_walutowy;
 
 
+import Database.Kurs;
+import Database.PostgresConnection;
 import java.io.File;
 import java.net.URL;
 
@@ -29,17 +31,23 @@ import java.net.URI;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javafx.application.Platform;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 
 
 
 import javafx.scene.chart.AreaChart;
+import javafx.scene.chart.CategoryAxis;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.ScatterChart;
 
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.Alert;
@@ -57,12 +65,10 @@ import org.xml.sax.SAXException;
  */
 public class FXMLDocumentController extends Przelicznik_walutowy implements Initializable {
     
-   //button
-    @FXML
-    private Button licz;
     @FXML
     private Button btnd;
-    
+    @FXML
+    private Button akt;
     @FXML
     private TextField pole1;
      @FXML
@@ -73,14 +79,15 @@ public class FXMLDocumentController extends Przelicznik_walutowy implements Init
     @FXML
     private ComboBox<String> lista_na;
     
-    
-   
-    private File kursy;
+    List<String> rates1FromTables;
+    List<String> rates2FromTables;
+    List<String> TableNames;
     private String data_kursow;
     private List<Double> rates;
     private List<String> kod_waluty;
     private Document doc;
     private int day;
+    
     private String urls,baza;
     private Date data;
     private boolean nacisniety;
@@ -104,6 +111,8 @@ public class FXMLDocumentController extends Przelicznik_walutowy implements Init
      
     @FXML
     private AreaChart<?,?> wykres;
+    @FXML
+    private AreaChart<?,?> wykres2;
     
     
     
@@ -113,7 +122,7 @@ public class FXMLDocumentController extends Przelicznik_walutowy implements Init
    
   
     
-    
+    /*    Ustawienie kalendarza       */
     private void init_datapicker(){
         
         
@@ -122,6 +131,7 @@ cal.setDayCellFactory(e -> new DateCell() {
         public void updateItem(LocalDate date, boolean empty) {
             super.updateItem(date, empty);
             LocalDate today = LocalDate.now();
+            
             LocalDate year= LocalDate.of(2019, 1, 1); 
             setDisable(empty || date.compareTo(today) > 0 || date.isBefore(year) );
            // setDisable(empty || date.isBefore(year));
@@ -131,25 +141,113 @@ cal.setDayCellFactory(e -> new DateCell() {
         
         
     }
-    private void dodawanie_wykresu(List<Double>rates,List<String>kod_waluty)
+    public void ZapisNazwTabel()
+    {
+        
+    }
+    private void WykresTrendu(String waluta_z, String waluta_na)
+    {   rates1FromTables=new ArrayList<>();
+    rates2FromTables=new ArrayList<>();
+    List<Double> wyniki = new ArrayList<>();
+        PostgresConnection connection1=new PostgresConnection();
+         
+        
+        rates1FromTables.addAll(connection1.SelectRowFromAllTables(TableNames, waluta_z));
+        
+             
+        
+        
+        rates2FromTables.addAll(connection1.SelectRowFromAllTables(TableNames, waluta_na));  
+        
+        for (int i = 0; i < rates1FromTables.size(); i++) {
+            
+       
+        Double y=zamiana_na_zl(120,Double.parseDouble(rates1FromTables.get(i)));
+        
+        Double wynik=zamiana_koncowa(y,Double.parseDouble(rates2FromTables.get(i)));
+        
+        wyniki.add(wynik/120.0);
+         }
+        wyniki.forEach(e->{
+            System.out.println(e);
+        });
+        dodawanie_wykresu(wykres2,wyniki,TableNames);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+    
+    private void dodawanie_wykresu(AreaChart<?,?> wykres,List<Double>rates,List<String>kod_waluty)
     {   
         wykres.getData().clear();
+       
+    
+         
+         XYChart.Series series = new XYChart.Series<>();
+         
         
-        XYChart.Series series = new XYChart.Series();
-        for (int i = 0; i <kod_waluty.size(); i++) {
-            series.getData().add(new XYChart.Data(String.valueOf(kod_waluty.get(i)),rates.get(i)));
+            
+        
+            for (int i = 0; i <kod_waluty.size(); i++) {
+            series.getData().add(new XYChart.Data(kod_waluty.get(i),rates.get(i)));
+            
+            
         }
+           
+            
         
          
+        
+        
+            
        
-       
-        wykres.setOpacity(0.8);
+        wykres.setOpacity(1);
       
       wykres.setCreateSymbols(false);
+      
         wykres.getData().add(series);
         
         
     }
+    private List<String> downloadFromDirFile(String date) throws FileNotFoundException{
+           Scanner fileScanner = new Scanner(new File("dir.txt"));
+
+        List<String> dateList=new ArrayList<>();
+
+
+        Pattern pattern =  Pattern.compile("a.*"+date);
+        Matcher matcher = null;
+         
+        while(fileScanner.hasNextLine()){
+            String line = fileScanner.nextLine();
+
+            matcher = pattern.matcher(line);
+            if(matcher.find()){
+
+                dateList.add(line);
+                
+
+            }
+
+
+        }
+        
+            
+        
+        return dateList;
+        }
+    
+    
+    
+    
+    
+     /*    Pobieranie przy starcie pliku z baza kursow z obecnego roku     */
   
 private File pobieranie_archiwum()
 {
@@ -176,6 +274,8 @@ return f;
         {
             Files.copy(in, Paths.get(filename),StandardCopyOption.REPLACE_EXISTING);
             doc=inicjalizacja_Dom(filename);
+            f.delete();
+            
         }catch( Exception  ex)
         {
 
@@ -186,18 +286,74 @@ return f;
          
         
     }
+    public void PobieranieOdpKursow(){
+        
+        
+        
+    }
+    
+    private void DatabaseInitialize(String date) throws FileNotFoundException{
+       
+       List<String> dates=downloadFromDirFile(date);
+        
+       for (int i = 0; i < dates.size(); i++) {
+            TableNames.add(dates.get(i).substring(5));
+        }
+        PostgresConnection connection=new PostgresConnection();
+        for (int i = 0; i < dates.size(); i++) {
+            
+           
+            
+           try {
+                download("http://www.nbp.pl/kursy/xml/"+dates.get(i)+".xml");
+               connection.CreateTableByDateAndFill(ParsXML(),dates.get(i).substring(5));
+           } catch (IOException ex) {
+               System.out.println("Tabele ktore chcesz dodac juz istnieja w bazie danych!");
+           } catch (Exception ex) {
+              System.out.println("Tabele ktore chcesz dodac juz istnieja w bazie danych!");
+           }
+           
+        }
+        
+        
+        
+        
+       
+        
+    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         baza="waluty_NBP29.xml";
          data = new Date();
         day=data.getDate();
+        System.out.println(day);
+        TableNames=new ArrayList<>();
+        
+        
         nacisniety=false;
         
         stringBaza="https://www.nbp.pl/kursy/xml/dir.txt";
-      
+        
+     
 
         pobieranie_archiwum();
+       
+          try {
+        
+        DatabaseInitialize("1905");
+        DatabaseInitialize("1906");
+        } catch (Exception exception) {
+            System.out.println("Baza danych jest już wypełniona!");
+        }
+        
+       
+      
+       
+      
+        
+       
+        
         
         doc=inicjalizacja_Dom(baza);
         parseXMl();
@@ -210,31 +366,38 @@ return f;
         
         init_datapicker();
         komunikat("Domyslnie wczytano kursy walut z 29 maja 2019r");
-        dodawanie_wykresu(rates,kod_waluty);
+        dodawanie_wykresu(wykres,rates,kod_waluty);
         
     
 
         
-      
+      /* ==================================================
+   Listener ( wyrazenie lambda) 
+        Gdy pole1 jest puste funkcja liczaca nie moze byc wywolywana by nie zwracac komunikatu i niepoprawnie wprowadzonej liczbie
+================================================== */
         
       pole1.textProperty().addListener((e) -> {
           if (pole1.getText().isEmpty()) 
+          {     polewynik.setText("0,00");
               return;
+          }
           else
               przelicz();
           
                   
               
           
-         // przelicz();
+         
                 
           
           
           
-    // ...
+    
 });
     
-        
+        /* ==================================================
+   Wywolywanie funkcji przeliczajacej przy zmianie kursu w ComboBox
+================================================== */
         
         lista_z.setOnAction((e) -> {
                 
@@ -244,6 +407,7 @@ return f;
             }
              kod_z.setText(kod_waluty.get(lista_z.getSelectionModel().getSelectedIndex()));
              przelicz();
+            
              
         });
         lista_na.setOnAction((e)->{
@@ -261,7 +425,7 @@ return f;
        
         
        
-
+ 
 
 
 
@@ -269,18 +433,54 @@ return f;
 
         
         
-    }    
-
-    @FXML
-    private void handlePrzeliczAction(ActionEvent event)  {
-       przelicz();
+    }  
+    public List<Kurs> ParsXML(){
+    doc.getDocumentElement().normalize();
+         
+        List<Kurs> kursclass = new ArrayList<>();
+        kursclass.clear();
+         NodeList nList = doc.getElementsByTagName("pozycja");
         
-    }
-   
-    private void otwieranie_startowe(){
+         
+         
+         
+         for (int selectionDate = 0; selectionDate < nList.getLength(); selectionDate++) {
+            Node nNode = nList.item(selectionDate);
+                
+            
+            if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+               Element eElement = (Element) nNode;
+               String inp=eElement.getElementsByTagName("nazwa_waluty").item(0).getTextContent();
+             
+               
+              
+               
+               String kurs=eElement.getElementsByTagName("kurs_sredni").item(0).getTextContent();
+              
+               
+               
+              
+               String kod=eElement.getElementsByTagName("kod_waluty").item(0).getTextContent();
+              
+               kursclass.add(new Kurs(selectionDate,inp,kod,kurs));
+            }
+            
+           
+         }
+         
+            kursclass.add(new Kurs(35,"Zloty polski","ZL","1,0"));
+         
+         
+	
       
-        
+                        
+	
+         return kursclass;
     }
+
+   
+   
+     /*   Przygotowanie pobranego pliku do parsowania    */
     private Document inicjalizacja_Dom(String nazwa_pliku){
         
         File f=new File(nazwa_pliku);
@@ -307,6 +507,10 @@ return f;
         
         
     }
+    /* ==================================================
+   Odczyt poszczegolnych elementow z pliku XML
+================================================== */
+   
     private void parseXMl() {
         
          rates= new ArrayList<>();
@@ -381,7 +585,7 @@ return f;
                lista_z.getSelectionModel().select(7);
         lista_na.getSelectionModel().selectLast();
                
-        dodawanie_wykresu(rates,kod_waluty);
+        dodawanie_wykresu(wykres,rates,kod_waluty);
          zapis.close();
          nacisniety=false;
          kursy_show.setText("Kursy z dnia "+data_kursow);
@@ -412,6 +616,9 @@ private double zamiana_koncowa(double y,double rate2)
 
 return y/rate2;
 }
+/* ==================================================
+   Funkcja przeliczajaca wartosci z pol TextField do odp. warotści.
+================================================== */
    private void przelicz()
     {
         
@@ -529,12 +736,7 @@ return y/rate2;
         }
         String obecnyDzien=c.getTime().toString();
         
-        System.out.println(obecnyDzien);
-        int i=5;
-        if (godzina<13 && i==1 ){
-            komunikat("Kursy z dzisiejszego dnia sa dodawane po godzinie 13:00");
-            return;
-        }
+       
 
         selectionDate=selectionDate.replaceAll("-","").substring(2);
         obecnyDzien=obecnyDzien.replaceAll("-","").substring(2);
@@ -544,24 +746,17 @@ return y/rate2;
 
         day=Integer.valueOf(selectionDate);
 
-        Scanner fileScanner = new Scanner(new File("dir.txt"));
-
-
-        Pattern pattern =  Pattern.compile("a.*"+selectionDate);
-        Matcher matcher = null;
-        while(fileScanner.hasNextLine()){
-            String line = fileScanner.nextLine();
-
-            matcher = pattern.matcher(line);
-            if(matcher.find()){
-
-                zmienna=line;
-                System.out.println(zmienna);
-
-            }
-
-
-        }
+         /* ==================================================
+   Wyszukiwanie w pliku dir.txt daty z ktorej mamy pobrac kursy. W wyrazeniu regularnym na poczatku jest litera a, gdyz chcemy pobierac srednie kursy.
+================================================== */
+        
+        
+        
+        
+        
+        zmienna=downloadFromDirFile(selectionDate).get(0);
+        
+        
 
 
 
@@ -601,7 +796,9 @@ return y/rate2;
 
     }
 
-    //  dodawanie tych kursow do bazy danych + ladniejsze okienka itp. / + moze wykres! / dodac komentarze
+    /* ==================================================
+   Funkcja sprawdzajaca czy wpisany ciag znakow nie zawiera wiecej niz jednej kropki badz przecinka.
+================================================== */
 
        private  boolean ContainsDuplicateCh(String s, char c)
 {
@@ -627,6 +824,9 @@ return y/rate2;
      
     return false;
 }
+       /* ==================================================
+   Zabklokowanie wprowadzania znakow roznych niz cyfry, "backspace", "i" , "."
+================================================== */
 @FXML
     private void walidac(javafx.scene.input.KeyEvent event) {
          
@@ -636,7 +836,7 @@ return y/rate2;
  
    
    
-    if( !("0123456789,.".contains(input) || c==8  ) ) 
+    if( !("0123456789,.".contains(input) || c==8  ) ) //c==8, gdyz hashCode() klawisza "backspace" wynosi wlasnie 8.
     {   
         System.out.print("%");
         event.consume();
@@ -652,6 +852,11 @@ return y/rate2;
         
     
 
+    }
+
+    @FXML
+    private void Aktua(ActionEvent event) {
+       WykresTrendu(kod_waluty.get(lista_z.getSelectionModel().getSelectedIndex()),kod_waluty.get(lista_na.getSelectionModel().getSelectedIndex() ));
     }
    
 

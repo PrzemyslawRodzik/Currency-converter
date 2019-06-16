@@ -26,8 +26,8 @@ public class Przelicznik_walutowy extends Application {
         stage.setScene(scene);
         stage.setMinHeight(589);
         stage.setMaxHeight(589);
-        stage.setMinWidth(1023);
-        stage.setMaxWidth(1023);
+        stage.setMinWidth(1294);
+        stage.setMaxWidth(1294);
        
         stage.show();
     }

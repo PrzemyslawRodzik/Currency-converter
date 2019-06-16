@@ -8,7 +8,10 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Przelicznik_walutowy.jar" size="14140" download="eager" />
+    <jar href="Przelicznik_walutowy.jar" size="19122" download="eager" />
+    <jar href="lib\ormlite-core-5.1.jar" size="330307" download="eager" />
+    <jar href="lib\ormlite-jdbc-5.1.jar" size="71435" download="eager" />
+    <jar href="lib\postgresql-9.2-1002.jdbc4.jar" size="576248" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Przelicznik_walutowy" >
     <param name="requiredFXVersion" value="8.0+"/>

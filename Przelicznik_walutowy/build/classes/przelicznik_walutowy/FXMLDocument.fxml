@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.Cursor?>
 <?import javafx.scene.chart.AreaChart?>
 <?import javafx.scene.chart.CategoryAxis?>
 <?import javafx.scene.chart.NumberAxis?>
@@ -12,17 +11,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" maxHeight="589.0" maxWidth="1023.0" minHeight="407.0" minWidth="600.0" prefHeight="589.0" prefWidth="1023.0" scaleShape="false" style="-fx-background-color: #1C2E48;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="przelicznik_walutowy.FXMLDocumentController">
+<AnchorPane id="AnchorPane" maxHeight="589.0" maxWidth="1294.0" minHeight="407.0" minWidth="600.0" prefHeight="589.0" prefWidth="1294.0" scaleShape="false" style="-fx-background-color: #1C2E48;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="przelicznik_walutowy.FXMLDocumentController">
     <children>
       <Button fx:id="btnd" layoutX="562.0" layoutY="231.0" mnemonicParsing="false" onAction="#handle_pobierz" prefHeight="26.0" prefWidth="70.0" text="Pobierz" />
-        <Button fx:id="licz" layoutX="485.0" layoutY="90.0" onAction="#handlePrzeliczAction" style="-fx-background-color: #005599; -fx-border-radius: 0;" text="Przelicz" textFill="WHITE">
-         <font>
-            <Font name="Segoe UI Semibold" size="16.0" />
-         </font></Button>
       <TextField fx:id="pole1" alignment="CENTER" cache="true" layoutX="22.0" layoutY="75.0" onKeyTyped="#walidac" prefHeight="106.0" prefWidth="208.0" style="-fx-background-color: #273952; -fx-text-fill: #FFFFFF; -fx-border-radius: 0;">
-         <cursor>
-            <Cursor fx:constant="TEXT" />
-         </cursor>
+         
          <font>
             <Font name="Segoe UI Light Italic" size="26.0" />
          </font></TextField>
@@ -38,9 +31,7 @@
          </font></Label>
       <DatePicker fx:id="cal" editable="false" layoutX="317.0" layoutY="232.0" promptText="Wybierz date      -&gt;" stylesheets="@datepicker.css" />
       <TextField fx:id="polewynik" alignment="CENTER" cache="true" editable="false" layoutX="248.0" layoutY="75.0" prefHeight="106.0" prefWidth="208.0" style="-fx-background-color: #273952; -fx-text-fill: #000000; -fx-border-radius: 0;">
-         <cursor>
-            <Cursor fx:constant="TEXT" />
-         </cursor>
+         
          <font>
             <Font name="Segoe UI Semibold Italic" size="26.0" />
          </font>
@@ -55,7 +46,7 @@
             <Font name="Segoe UI Semilight" size="26.0" />
          </font>
       </Label>
-      <AreaChart fx:id="wykres" layoutY="268.0" opacity="0.84" prefHeight="318.0" prefWidth="802.0" style="-fx-background-color: #1C2E48;" stylesheets="@AreaChart.css">
+      <AreaChart fx:id="wykres" layoutX="662.0" layoutY="75.0" opacity="0.84" prefHeight="185.0" prefWidth="591.0" style="-fx-background-color: #1C2E48;" stylesheets="@AreaChart.css">
         <xAxis>
           <CategoryAxis side="BOTTOM" />
         </xAxis>
@@ -73,5 +64,14 @@
             <Font name="Segoe UI Symbol" size="36.0" />
          </font>
       </Label>
+      <AreaChart fx:id="wykres2" layoutX="22.0" layoutY="270.0" opacity="0.84" prefHeight="307.0" prefWidth="1040.0" style="-fx-background-color: #1C2E48;" stylesheets="@AreaChart.css">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </AreaChart>
+      <Button fx:id="akt" layoutX="1017.0" layoutY="32.0" mnemonicParsing="false" onAction="#Aktua" prefHeight="25.0" prefWidth="152.0" text="Aktualizuj" />
     </children>
 </AnchorPane>
