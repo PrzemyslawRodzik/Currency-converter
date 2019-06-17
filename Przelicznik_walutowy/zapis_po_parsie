@@ -7,7 +7,7 @@ kod_waluty : THB
 kurs_sredni : 0,1211
 
 Current Element :pozycja
-Nazwa waluty : dolar ameryka≈Ñski
+Nazwa waluty : dolar amerykaÒski
 przelicznik : 1
 kod_waluty : USD
 kurs_sredni : 3,8554
@@ -49,7 +49,7 @@ kod_waluty : EUR
 kurs_sredni : 4,3007
 
 Current Element :pozycja
-Nazwa waluty : forint (Wƒôgry)
+Nazwa waluty : forint (WÍgry)
 przelicznik : 100
 kod_waluty : HUF
 kurs_sredni : 1,3141
@@ -85,7 +85,7 @@ kod_waluty : CZK
 kurs_sredni : 0,1663
 
 Current Element :pozycja
-Nazwa waluty : korona du≈Ñska
+Nazwa waluty : korona duÒska
 przelicznik : 1
 kod_waluty : DKK
 kurs_sredni : 0,5758
@@ -115,13 +115,13 @@ kod_waluty : HRK
 kurs_sredni : 0,5792
 
 Current Element :pozycja
-Nazwa waluty : lej rumu≈Ñski
+Nazwa waluty : lej rumuÒski
 przelicznik : 1
 kod_waluty : RON
 kurs_sredni : 0,9030
 
 Current Element :pozycja
-Nazwa waluty : lew (Bu≈Çgaria)
+Nazwa waluty : lew (Bu≥garia)
 przelicznik : 1
 kod_waluty : BGN
 kurs_sredni : 2,1989
@@ -145,19 +145,19 @@ kod_waluty : CLP
 kurs_sredni : 0,5449
 
 Current Element :pozycja
-Nazwa waluty : peso filipi≈Ñskie
+Nazwa waluty : peso filipiÒskie
 przelicznik : 1
 kod_waluty : PHP
 kurs_sredni : 0,0736
 
 Current Element :pozycja
-Nazwa waluty : peso meksyka≈Ñskie
+Nazwa waluty : peso meksykaÒskie
 przelicznik : 1
 kod_waluty : MXN
 kurs_sredni : 0,2002
 
 Current Element :pozycja
-Nazwa waluty : rand (Republika Po≈Çudniowej Afryki)
+Nazwa waluty : rand (Republika Po≥udniowej Afryki)
 przelicznik : 1
 kod_waluty : ZAR
 kurs_sredni : 0,2595
@@ -193,7 +193,7 @@ kod_waluty : INR
 kurs_sredni : 5,5151
 
 Current Element :pozycja
-Nazwa waluty : won po≈Çudniowokorea≈Ñski
+Nazwa waluty : won po≥udniowokoreaÒski
 przelicznik : 100
 kod_waluty : KRW
 kurs_sredni : 0,3226
